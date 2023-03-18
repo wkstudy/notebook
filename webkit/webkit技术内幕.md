@@ -53,5 +53,10 @@ test.html:43 onload
 
 
 ## 第四章 资源加载和网络栈
+涉及到缓存存储的方式、网络请求相关的细节都是略读，目前来说这方面知识还比较欠缺
+
 要区分清楚 memory cache 和网络缓存
-[一文读懂前端缓存](https://www.zhihu.com/collection/403723057)，结合这篇文章把memory cache 、disk cache区别与细节理清楚
+[一文读懂前端缓存](https://zhuanlan.zhihu.com/p/44789005)，结合这篇文章把memory cache 、disk cache区别与细节理清楚
+1. ？ memory cache 还需要发送http请求确认吗？   没有看到明确的回答
+2. chrome 用户强制刷新的原理？  我理解是一般缓存在浏览器的才会走发送http请求确认是否用缓存那一套，强制刷新是直接清除缓存，那么就是不会走缓存那一套了
+3. tcp第三次握手的过程中就可以携带应用层的数据了[TCP第三次握手能携带数据吗？做个实验就知道！](https://zhuanlan.zhihu.com/p/373422503)

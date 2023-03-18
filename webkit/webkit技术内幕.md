@@ -50,3 +50,8 @@ test.html:43 onload
 
 
 这里可以再重读下[深入了解现代浏览器系列](https://github.com/ascoders/weekly/blob/master/%E5%89%8D%E6%B2%BF%E6%8A%80%E6%9C%AF/221.%E7%B2%BE%E8%AF%BB%E3%80%8A%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3%E7%8E%B0%E4%BB%A3%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%89%E3%80%8B.md)，可以发现更多信息
+
+
+## 第四章 资源加载和网络栈
+要区分清楚 memory cache 和网络缓存
+[一文读懂前端缓存](https://www.zhihu.com/collection/403723057)，结合这篇文章把memory cache 、disk cache区别与细节理清楚

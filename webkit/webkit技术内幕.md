@@ -1,5 +1,6 @@
 # 阅读《webkit技术内幕》的笔记
 > 一些标注都记在图书里，这里是一些额外的想法
+> 主要阅读以下几章，其他章略读或者未读，后续有机会再读
 
 ## 第二章 html网页与结构
 这里谈到 DOMContentLoaded是在dom树构建完成之后调用的，onload是在各个资源（如图片等）加载完调用的，那么对于异步的js资源( async defer)是在何时调用的
@@ -60,3 +61,7 @@ test.html:43 onload
 1. ？ memory cache 还需要发送http请求确认吗？   没有看到明确的回答
 2. chrome 用户强制刷新的原理？  我理解是一般缓存在浏览器的才会走发送http请求确认是否用缓存那一套，强制刷新是直接清除缓存，那么就是不会走缓存那一套了
 3. tcp第三次握手的过程中就可以携带应用层的数据了[TCP第三次握手能携带数据吗？做个实验就知道！](https://zhuanlan.zhihu.com/p/373422503)
+
+## 第九章 JavaScript引擎
+1. 垃圾回收机制？ [JavaScript垃圾收集-标记清除和引用计数](https://www.cnblogs.com/scottjeremy/p/6870729.html)
+

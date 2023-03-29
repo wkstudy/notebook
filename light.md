@@ -23,7 +23,8 @@ console.log(buf)
 http2的优势也有一个是二进制传输，那么相比文本传输，优势在哪呢？
 
 [refer](https://juejin.cn/post/6945266413917437983#heading-0)
-
+[文本文件和二进制文件的区别？请举例说明。 - 史历的回答 - 知乎](https://www.zhihu.com/question/19971994/answer/570107874)
+[文本文件与二进制文件区别](https://www.cnblogs.com/zhangjiankun/archive/2011/11/27/2265184.html)
 
 ### 单工、半双工、全双工
 单工：电视，一方发送，一方接收

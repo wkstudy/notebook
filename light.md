@@ -31,3 +31,10 @@ http2的优势也有一个是二进制传输，那么相比文本传输，优势
 半双工：单行道 http1.x 
 全双工：双行道  http2 多路复用
 http2 http1的区别
+
+
+
+
+### nodejs eventloop
+目前的认识是宏任务三个点比较关注，timers(settimeout setinterval) poll(内部的callback) check(setimmediate)，微任务的话process.nexttick高于promise
+[正确理解 Node.js 的 Event loop - 乃乎的文章 - 知乎](https://zhuanlan.zhihu.com/p/80458653)

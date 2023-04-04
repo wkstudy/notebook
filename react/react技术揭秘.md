@@ -8,6 +8,7 @@ mount completeWork
 
 
 
+beginwork中看能否直接复用current.fiber(bailoutOnAlreadyFinishedWork)是根据memoizedProps===pendingProps, 这个pendignprops（是执行完setstate后的节点的props）是从哪里获取的？
 
 
 

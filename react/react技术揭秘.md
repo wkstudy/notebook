@@ -1,5 +1,6 @@
 ### 第三章 render
 
+
 mount beginWork
 创建当前fiber节点的第一个子元素的fiber节点
 
@@ -9,6 +10,14 @@ mount completeWork
 
 
 beginwork中看能否直接复用current.fiber(bailoutOnAlreadyFinishedWork)是根据memoizedProps===pendingProps, 这个pendignprops（是执行完setstate后的节点的props）是从哪里获取的？
+
+update beginwork
+bailout(满足一定条件下直接clone current.fiber)，否则就依据current.fiber和新生成的jsx节点生成fiber节点
+
+
+
+update completework
+把各个节点的prop的变化记录下来，并标记effect_tag，为了提高效率，会把所有有effect_tag的fiber链接起来，方便commit阶段执行dom更新
 
 
 

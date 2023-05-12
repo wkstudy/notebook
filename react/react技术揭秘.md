@@ -1,4 +1,4 @@
-### 第三章 render
+### 第二章 render
 
 
 mount beginWork
@@ -23,7 +23,7 @@ update completework
 
 
 
-### 第四章commit
+### 第三章commit
 
 flushPassiveEffects() // 执行上一次useeffect的销毁函数和这一次useeffect的回调函数（要在本次commit阶段之前遗留的useeffect给执行完 ）
 // 这里遗留的useeffect也不太清楚具体是咋遗留的？
@@ -46,3 +46,9 @@ layout
 2. 对于functioncomponentfiber,会执行uselayout的回调函数
 3. 执行classcomponent的this.setState()的第二个参数/React.render()的第三个参数
 4. 把useeffect的销毁、回调函数添加到一个数组中，便于异步调用  （这的异步调用useeffect就是在beforemutation里创建的）
+
+
+### 第四章 diff
+diff就是上述beginwork里update时，根据currrent.fiber和jsx对象生成workprogress.fiber的
+
+判断一个节点是否能复用的话是fiber.tagtype和key是否一样(key没有设置的话就默认为null)

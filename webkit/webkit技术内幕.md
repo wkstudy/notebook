@@ -58,10 +58,12 @@ test.html:43 onload
 
 要区分清楚 memory cache 和网络缓存
 [一文读懂前端缓存](https://zhuanlan.zhihu.com/p/44789005)，结合这篇文章把memory cache 、disk cache区别与细节理清楚
-1. ？ memory cache 还需要发送http请求确认吗？   没有看到明确的回答
+1. ？ memory cache 还需要发送http请求确认吗？   没有看到明确的回答 （不需要的）
 2. chrome 用户强制刷新的原理？  我理解是一般缓存在浏览器的才会走发送http请求确认是否用缓存那一套，强制刷新是直接清除缓存，那么就是不会走缓存那一套了
 3. tcp第三次握手的过程中就可以携带应用层的数据了[TCP第三次握手能携带数据吗？做个实验就知道！](https://zhuanlan.zhihu.com/p/373422503)
 
+
+一般加载某个页面，第一个请求一定是个html请求，这个是向服务器请求的（没有走缓存），接下来的js\css等资源才会走memorycache diskcache 
 ## 第九章 JavaScript引擎
 1. 垃圾回收机制？ [JavaScript垃圾收集-标记清除和引用计数](https://www.cnblogs.com/scottjeremy/p/6870729.html)
 

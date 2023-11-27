@@ -12,3 +12,4 @@ http://t.csdn.cn/pqvJ6
 3. 可能涉及到需要开放myssql远程登录，获取msyql的端口（默认3306），一般就是防火墙这个端口要开，用的阿里/uc服务的安全组要开
 
 
+4. [mysql root账号忘记密码,实测成功](https://blog.csdn.net/soulwyb/article/details/105790681)

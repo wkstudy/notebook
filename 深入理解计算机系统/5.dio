@@ -1,0 +1,13 @@
+<mxfile host="65bd71144e">
+    <diagram id="H7c14znRs2ALTADNEZIS" name="第 1 页">
+        <mxGraphModel dx="796" dy="490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;h1&gt;优化程序性能&lt;/h1&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&amp;nbsp;第三章深入到了指令层级，本章会涉及到处理器（cpu）实际中对于指令的处理，以此作为进行性能优化的方法&lt;/li&gt;&lt;li&gt;减少过程调用（函数调用） ，封装函数会增加开销，但可能会复合设计原则， 提升代码可读性、应按照实际情况取舍&lt;/li&gt;&lt;li&gt;减少不必要的内存引用（使用局部变量，不要直接改变参数，频繁读、写内存好性能）&lt;/li&gt;&lt;li&gt;目标、参考就是 延迟界限、吞吐量界限&amp;nbsp;&amp;nbsp;&lt;/li&gt;&lt;li&gt;性能优化这里就是 更好的利用处理器指令级并行的能力（计算机并不是顺序执行代码的，计算机可以分析出前后不相互影响的代码提前执行，不然计算机处于等待的状态，浪费性能）&lt;/li&gt;&lt;li&gt;本章内容是通过对一段函数不断地优化引入各个概念的，到后续延迟界限、吞吐量界限的时候没有太深究，细节之处不是很清楚，有需要可再次阅读&lt;/li&gt;&lt;li&gt;处理器划分 控制单元和执行单元，功能单元越多，则吞吐量可能更多&lt;/li&gt;&lt;li&gt;我的大概理解是 要发挥指令级并行的能力、同时让尽可能多的功能单元利用起来，才能够接近吞吐量极限&lt;/li&gt;&lt;li&gt;目前是有性能分析工具的，可以给出一段代码各处的执行时间，便于进行优化，同理可应用到前端&lt;/li&gt;&lt;li&gt;一般用时钟周期来衡量性能， 一般说CPU是2.5GHz，是指每秒进行2.5*10&lt;sup style=&quot;background-color: initial;&quot;&gt;9&lt;/sup&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;个周期&lt;/span&gt;&lt;/li&gt;&lt;li&gt;本章的收获是几个&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="80" width="690" height="550" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

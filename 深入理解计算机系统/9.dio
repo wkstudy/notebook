@@ -1,0 +1,25 @@
+<mxfile host="65bd71144e">
+    <diagram id="YP5Dtcqjj4CPegBvGra9" name="第 1 页">
+        <mxGraphModel dx="796" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" value="&lt;h1&gt;多级页表&lt;/h1&gt;&lt;p&gt;原文提到，只使用单级页表的话，会显得比较“浪费”，原因在于页面的页表的数量级和虚拟空间的数量级类似于1:1的关系，虚拟空间越多，那么页表也就需要越大&lt;/p&gt;&lt;p&gt;多级页面能节省空间的原因在于 ：假设原来需要10个页表，现在可能用2级页表就可以完成，原因就是 2*5=10（数字值可能不对，表达的意思是用乘法而非一对一的办法表示数据，总是可以节省空间的）&lt;/p&gt;&lt;p&gt;多级页表的原理是虚拟地址存储分为k位，第k位代表在第k级页面上的便宜量，最后映射到最终的物理地址（内存上）&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="220" width="320" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;h1&gt;虚拟内存解决的问题&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;多个应用程序共享一段内存，怎么保证个程序相互独立，不出错&lt;/li&gt;&lt;li&gt;随着应用程序增多，内存需求量也不端变大， 在内存有限的情况先怎么支持这么多的程序&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="30" width="290" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="&lt;h1&gt;虚拟内存&lt;/h1&gt;&lt;ol&gt;&lt;li&gt;虚拟内存主要存在磁盘上，内存中只是缓存， 解决内存不够的问题&lt;/li&gt;&lt;li&gt;页表上不仅是虚拟地址和物理地址的映射，也包括对物理地址的权限（读写），保证不会出错， 解决多个程序更改内存，可能出错的问题&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="190" width="300" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="&lt;h1&gt;内存映射（虚拟内存与文件系统的关联）&lt;/h1&gt;&lt;p&gt;虚拟内存的初始化，可以把内存的某个区域和磁盘中的某个文件关联起来，比如关联到可执行目标文件或者由内核创建的匿名文件&lt;/p&gt;&lt;p&gt;共享对象：可将一个磁盘文件映射到不同的虚拟内存中（比如调用scanf函数）&lt;/p&gt;&lt;p&gt;fork、execve函数从虚拟内存的角度进行理解。比如fork函数就是和原进程只向相同的物理内存，有写操作时再通过写时复制创建一份副本独立出来&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="430" width="320" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;h1&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;动态内存分配&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;虚拟内存角度动态申请、释放内存&lt;/span&gt;&lt;/li&gt;&lt;li&gt;分配引起碎片问题，如何处理此类问题（有限的区区域力最大程度的使用）&lt;/li&gt;&lt;ol&gt;&lt;li&gt;隐式空闲链表&lt;/li&gt;&lt;li&gt;显式空闲链表&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;内存使用、释放有两种，一种是现实的申请、释放（如c语言），另一种是自动释放（垃圾回收机制）&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="479" width="320" height="230" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
